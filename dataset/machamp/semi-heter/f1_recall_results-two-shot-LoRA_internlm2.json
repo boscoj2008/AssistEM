@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9371980676328503,
+  "Precision": 0.9586206896551724,
+  "Recall": 0.8742138364779874,
+  "f1": 0.9144736842105264,
+  "eval_time": 607.086538525,
+  "task_name": "semi-heter-test.json",
+  "model": "internlm/internlm2-7b",
+  "method": "two-shot"
+}

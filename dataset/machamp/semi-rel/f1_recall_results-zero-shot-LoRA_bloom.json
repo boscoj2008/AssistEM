@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9496567505720824,
+  "Precision": 0.9653179190751445,
+  "Recall": 0.912568306010929,
+  "f1": 0.9382022471910112,
+  "eval_time": 355.21458553499997,
+  "task_name": "semi-rel-test.json",
+  "model": "bigscience/bloom-7b1",
+  "method": "zero-shot"
+}

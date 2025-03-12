@@ -1,0 +1,11 @@
+{
+  "Acc": 0.977116704805492,
+  "Precision": 0.9832402234636871,
+  "Recall": 0.9617486338797814,
+  "f1": 0.9723756906077347,
+  "eval_time": 3714.971003411,
+  "task_name": "semi-rel-test.json",
+  "model": "upstage/SOLAR-10.7B-v1.0",
+  "method": "zero-shot",
+  "data_size": 8000
+}

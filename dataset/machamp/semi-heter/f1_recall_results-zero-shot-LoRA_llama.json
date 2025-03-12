@@ -1,0 +1,11 @@
+{
+  "Acc": 0.9685990338164251,
+  "Precision": 0.967948717948718,
+  "Recall": 0.949685534591195,
+  "f1": 0.9587301587301587,
+  "eval_time": 1844.498794871,
+  "task_name": "semi-heter-test.json",
+  "model": "upstage/SOLAR-10.7B-v1.0",
+  "method": "zero-shot",
+  "data_size": 10000
+}

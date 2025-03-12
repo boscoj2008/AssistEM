@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9541284403669725,
+  "Precision": 0.75,
+  "Recall": 0.9,
+  "f1": 0.8181818181818182,
+  "eval_time": 3169.3497063100003,
+  "task_name": "wdc-test.json",
+  "model": "mosaicml/mpt-7b-8k",
+  "method": "zero-shot"
+}

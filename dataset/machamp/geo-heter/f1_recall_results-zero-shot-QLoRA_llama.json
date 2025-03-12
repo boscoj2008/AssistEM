@@ -1,0 +1,11 @@
+{
+  "Acc": 0.93,
+  "Precision": 0.8235294117647058,
+  "Recall": 0.9655172413793104,
+  "f1": 0.888888888888889,
+  "eval_time": 1463.80542844,
+  "task_name": "geo-heter-test.json",
+  "model": "01-ai/Yi-34B",
+  "method": "zero-shot",
+  "data_size": 15800
+}

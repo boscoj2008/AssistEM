@@ -1,0 +1,10 @@
+{
+  "Acc": 0.97,
+  "Precision": 0.9148936170212766,
+  "Recall": 0.9247311827956989,
+  "f1": 0.9197860962566845,
+  "eval_time": 12638.484218415,
+  "task_name": "semi-homo-test.json",
+  "model": "upstage/SOLAR-10.7B-v1.0",
+  "method": "two-shot"
+}

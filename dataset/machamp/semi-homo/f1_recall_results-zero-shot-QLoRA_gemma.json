@@ -1,0 +1,10 @@
+{
+  "Acc": 0.964,
+  "Precision": 0.9213483146067416,
+  "Recall": 0.8817204301075269,
+  "f1": 0.901098901098901,
+  "eval_time": 3251.581689738,
+  "task_name": "semi-homo-test.json",
+  "model": "google/gemma-7b",
+  "method": "zero-shot"
+}

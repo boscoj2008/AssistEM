@@ -1,0 +1,10 @@
+{
+  "Acc": 0.932,
+  "Precision": 0.8627450980392157,
+  "Recall": 0.9103448275862069,
+  "f1": 0.8859060402684564,
+  "eval_time": 3675.090344709,
+  "task_name": "geo-heter-test.json",
+  "model": "mosaicml/mpt-7b-8k",
+  "method": "zero-shot"
+}

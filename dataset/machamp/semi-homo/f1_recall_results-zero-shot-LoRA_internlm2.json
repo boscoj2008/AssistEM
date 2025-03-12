@@ -1,0 +1,10 @@
+{
+  "Acc": 0.948,
+  "Precision": 0.8764044943820225,
+  "Recall": 0.8387096774193549,
+  "f1": 0.8571428571428572,
+  "eval_time": 563.819865706,
+  "task_name": "semi-homo-test.json",
+  "model": "internlm/internlm2-7b",
+  "method": "zero-shot"
+}

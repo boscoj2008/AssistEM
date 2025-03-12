@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9496567505720824,
+  "Precision": 1.0,
+  "Recall": 0.8797814207650273,
+  "f1": 0.936046511627907,
+  "eval_time": 2094.891808379,
+  "task_name": "semi-rel-test.json",
+  "model": "google/gemma-7b",
+  "method": "zero-shot"
+}

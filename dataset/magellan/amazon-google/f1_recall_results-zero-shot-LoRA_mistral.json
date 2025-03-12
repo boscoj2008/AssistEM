@@ -1,0 +1,11 @@
+{
+  "Acc": 0.956,
+  "Precision": 0.7636363636363637,
+  "Recall": 0.8235294117647058,
+  "f1": 0.7924528301886793,
+  "eval_time": 845.3642354709999,
+  "task_name": "amazon-google-test.json",
+  "model": "mistralai/Mistral-7B-v0.1",
+  "method": "zero-shot",
+  "data_size": 14000
+}

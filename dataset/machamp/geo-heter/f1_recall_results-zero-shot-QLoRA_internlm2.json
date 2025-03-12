@@ -1,0 +1,10 @@
+{
+  "Acc": 0.956,
+  "Precision": 0.8819875776397516,
+  "Recall": 0.9793103448275862,
+  "f1": 0.9281045751633987,
+  "eval_time": 764.8063625479999,
+  "task_name": "geo-heter-test.json",
+  "model": "internlm/internlm2-base-20b",
+  "method": "zero-shot"
+}

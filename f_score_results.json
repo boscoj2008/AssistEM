@@ -1,0 +1,79 @@
+{
+  "2024-05-28 03:02:59": {
+    "Acc": 0.926605504587156,
+    "Precision": 0.65,
+    "Recall": 0.78,
+    "f1": 0.709090909090909,
+    "eval_time": 769.825153656,
+    "task_name": "wdc-test.json",
+    "model": "Deci/DeciLM-7B",
+    "method": "zero-shot",
+    "data_size": 45000
+  },
+  "2024-05-28 03:16:05": {
+    "Acc": 0.927536231884058,
+    "Precision": 0.910828025477707,
+    "Recall": 0.89937106918239,
+    "f1": 0.9050632911392406,
+    "eval_time": 752.7763286649999,
+    "task_name": "semi-heter-test.json",
+    "model": "Deci/DeciLM-7B",
+    "method": "zero-shot",
+    "data_size": 45000
+  },
+  "2024-05-28 03:31:49": {
+    "Acc": 0.778,
+    "Precision": 0.569672131147541,
+    "Recall": 0.9586206896551724,
+    "f1": 0.7146529562982006,
+    "eval_time": 896.5636572660001,
+    "task_name": "geo-heter-test.json",
+    "model": "Deci/DeciLM-7B",
+    "method": "zero-shot",
+    "data_size": 45000
+  },
+  "2024-05-28 03:47:24": {
+    "Acc": 0.902,
+    "Precision": 0.5147058823529411,
+    "Recall": 0.6862745098039216,
+    "f1": 0.588235294117647,
+    "eval_time": 899.961651786,
+    "task_name": "amazon-google-test.json",
+    "model": "Deci/DeciLM-7B",
+    "method": "zero-shot",
+    "data_size": 15800
+  },
+  "2024-05-28 04:03:05": {
+    "Acc": 0.83,
+    "Precision": 0.5287356321839081,
+    "Recall": 0.5111111111111111,
+    "f1": 0.519774011299435,
+    "eval_time": 908.203030947,
+    "task_name": "rel-text-test.json",
+    "model": "Deci/DeciLM-7B",
+    "method": "zero-shot",
+    "data_size": 45000
+  },
+  "2024-05-28 04:18:34": {
+    "Acc": 0.904,
+    "Precision": 0.7319587628865979,
+    "Recall": 0.7634408602150538,
+    "f1": 0.7473684210526316,
+    "eval_time": 895.458528917,
+    "task_name": "semi-homo-test.json",
+    "model": "Deci/DeciLM-7B",
+    "method": "zero-shot",
+    "data_size": 45000
+  },
+  "2024-05-28 04:32:34": {
+    "Acc": 0.9450800915331807,
+    "Precision": 1.0,
+    "Recall": 0.8688524590163934,
+    "f1": 0.9298245614035088,
+    "eval_time": 805.8430386,
+    "task_name": "semi-rel-test.json",
+    "model": "Deci/DeciLM-7B",
+    "method": "zero-shot",
+    "data_size": 45000
+  }
+}

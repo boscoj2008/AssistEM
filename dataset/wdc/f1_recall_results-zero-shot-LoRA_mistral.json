@@ -1,0 +1,11 @@
+{
+  "Acc": 0.8738532110091743,
+  "Precision": 0.4647887323943662,
+  "Recall": 0.66,
+  "f1": 0.5454545454545454,
+  "eval_time": 7655.5369328960005,
+  "task_name": "wdc-test.json",
+  "model": "upstage/SOLAR-10.7B-v1.0",
+  "method": "zero-shot",
+  "data_size": 14000
+}

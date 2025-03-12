@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9334862385321101,
+  "Precision": 0.64,
+  "Recall": 0.96,
+  "f1": 0.7679999999999999,
+  "eval_time": 481.34872684199996,
+  "task_name": "wdc-test.json",
+  "model": "internlm/internlm2-7b",
+  "method": "zero-shot"
+}

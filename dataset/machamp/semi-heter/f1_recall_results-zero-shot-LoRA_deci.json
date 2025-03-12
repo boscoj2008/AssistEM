@@ -1,0 +1,11 @@
+{
+  "Acc": 0.9637681159420289,
+  "Precision": 0.9736842105263158,
+  "Recall": 0.9308176100628931,
+  "f1": 0.9517684887459807,
+  "eval_time": 779.0849092059999,
+  "task_name": "semi-heter-test.json",
+  "model": "Deci/DeciLM-7B",
+  "method": "zero-shot",
+  "data_size": 15800
+}

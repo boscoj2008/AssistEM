@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9685990338164251,
+  "Precision": 0.9802631578947368,
+  "Recall": 0.9371069182389937,
+  "f1": 0.9581993569131834,
+  "eval_time": 2889.262530512,
+  "task_name": "semi-heter-test.json",
+  "model": "google/gemma-7b",
+  "method": "zero-shot"
+}

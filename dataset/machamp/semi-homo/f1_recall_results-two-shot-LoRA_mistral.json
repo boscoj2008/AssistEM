@@ -1,0 +1,11 @@
+{
+  "Acc": 0.962,
+  "Precision": 0.8936170212765957,
+  "Recall": 0.9032258064516129,
+  "f1": 0.8983957219251337,
+  "eval_time": 1167.698658426,
+  "task_name": "semi-homo-test.json",
+  "model": "mistralai/Mistral-7B-v0.1",
+  "method": "two-shot",
+  "data_size": 14000
+}

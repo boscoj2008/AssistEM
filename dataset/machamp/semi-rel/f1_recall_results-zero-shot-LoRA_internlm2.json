@@ -1,0 +1,10 @@
+{
+  "Acc": 0.8672768878718535,
+  "Precision": 1.0,
+  "Recall": 0.6830601092896175,
+  "f1": 0.8116883116883116,
+  "eval_time": 499.42360979599994,
+  "task_name": "semi-rel-test.json",
+  "model": "internlm/internlm2-7b",
+  "method": "zero-shot"
+}

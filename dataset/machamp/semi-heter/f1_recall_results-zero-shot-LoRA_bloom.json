@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9541062801932367,
+  "Precision": 0.9430379746835443,
+  "Recall": 0.9371069182389937,
+  "f1": 0.9400630914826499,
+  "eval_time": 335.816994169,
+  "task_name": "semi-heter-test.json",
+  "model": "bigscience/bloom-7b1",
+  "method": "zero-shot"
+}

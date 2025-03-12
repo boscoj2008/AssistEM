@@ -1,0 +1,11 @@
+{
+  "Acc": 0.958,
+  "Precision": 0.9133333333333333,
+  "Recall": 0.9448275862068966,
+  "f1": 0.9288135593220338,
+  "eval_time": 1878.573035872,
+  "task_name": "geo-heter-test.json",
+  "model": "upstage/SOLAR-10.7B-v1.0",
+  "method": "zero-shot",
+  "data_size": 10000
+}

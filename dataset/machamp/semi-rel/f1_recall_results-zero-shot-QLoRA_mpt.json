@@ -1,0 +1,10 @@
+{
+  "Acc": 0.8215102974828375,
+  "Precision": 0.8070175438596491,
+  "Recall": 0.7540983606557377,
+  "f1": 0.7796610169491526,
+  "eval_time": 3636.10067791,
+  "task_name": "semi-rel-test.json",
+  "model": "mosaicml/mpt-7b-8k",
+  "method": "zero-shot"
+}

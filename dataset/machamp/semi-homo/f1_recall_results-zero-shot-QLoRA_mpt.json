@@ -1,0 +1,10 @@
+{
+  "Acc": 0.37,
+  "Precision": 0.22388059701492538,
+  "Recall": 0.967741935483871,
+  "f1": 0.36363636363636365,
+  "eval_time": 3667.782245905,
+  "task_name": "semi-homo-test.json",
+  "model": "mosaicml/mpt-7b-8k",
+  "method": "zero-shot"
+}

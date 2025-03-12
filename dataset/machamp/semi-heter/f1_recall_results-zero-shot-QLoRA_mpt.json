@@ -1,0 +1,10 @@
+{
+  "Acc": 0.961352657004831,
+  "Precision": 0.9230769230769231,
+  "Recall": 0.9811320754716981,
+  "f1": 0.9512195121951219,
+  "eval_time": 3381.302108818,
+  "task_name": "semi-heter-test.json",
+  "model": "mosaicml/mpt-7b-8k",
+  "method": "zero-shot"
+}

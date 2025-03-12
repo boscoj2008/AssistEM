@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9334862385321101,
+  "Precision": 0.6521739130434783,
+  "Recall": 0.9,
+  "f1": 0.7563025210084033,
+  "eval_time": 353.187065466,
+  "task_name": "wdc-test.json",
+  "model": "bigscience/bloom-7b1",
+  "method": "zero-shot"
+}

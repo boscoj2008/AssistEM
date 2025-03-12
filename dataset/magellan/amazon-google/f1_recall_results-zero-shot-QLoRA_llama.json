@@ -1,0 +1,11 @@
+{
+  "Acc": 0.95,
+  "Precision": 0.6911764705882353,
+  "Recall": 0.9215686274509803,
+  "f1": 0.7899159663865546,
+  "eval_time": 1430.723857614,
+  "task_name": "amazon-google-test.json",
+  "model": "01-ai/Yi-34B",
+  "method": "zero-shot",
+  "data_size": 15800
+}

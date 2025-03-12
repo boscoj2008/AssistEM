@@ -1,0 +1,10 @@
+{
+  "Acc": 0.966,
+  "Precision": 0.9042553191489362,
+  "Recall": 0.9139784946236559,
+  "f1": 0.9090909090909091,
+  "eval_time": 399.851630868,
+  "task_name": "semi-homo-test.json",
+  "model": "bigscience/bloom-7b1",
+  "method": "zero-shot"
+}

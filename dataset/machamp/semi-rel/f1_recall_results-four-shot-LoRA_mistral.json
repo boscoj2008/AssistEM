@@ -1,0 +1,10 @@
+{
+  "Acc": 0.9702517162471396,
+  "Precision": 0.9775280898876404,
+  "Recall": 0.9508196721311475,
+  "f1": 0.9639889196675899,
+  "eval_time": 1114.420179835,
+  "task_name": "semi-rel-test.json",
+  "model": "mistralai/Mistral-7B-v0.1",
+  "method": "four-shot"
+}

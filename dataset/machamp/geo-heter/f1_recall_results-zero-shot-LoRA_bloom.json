@@ -1,0 +1,10 @@
+{
+  "Acc": 0.88,
+  "Precision": 0.7456647398843931,
+  "Recall": 0.8896551724137931,
+  "f1": 0.8113207547169811,
+  "eval_time": 397.004417676,
+  "task_name": "geo-heter-test.json",
+  "model": "bigscience/bloom-7b1",
+  "method": "zero-shot"
+}

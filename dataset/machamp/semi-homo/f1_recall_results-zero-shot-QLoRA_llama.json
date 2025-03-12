@@ -1,0 +1,11 @@
+{
+  "Acc": 0.972,
+  "Precision": 0.9072164948453608,
+  "Recall": 0.946236559139785,
+  "f1": 0.9263157894736843,
+  "eval_time": 1433.538901306,
+  "task_name": "semi-homo-test.json",
+  "model": "01-ai/Yi-34B",
+  "method": "zero-shot",
+  "data_size": 15800
+}
