@@ -34,6 +34,8 @@ import numpy as np
 
 use_pytorch_for_gpu_memory()
 require_gpu()
+
+# use this instead for the NER model
 # nlp = spacy.load("en_core_web_md")
 
 
@@ -169,6 +171,7 @@ parser.add_argument("--instruction",
                     default="Analyze the product descriptions and determine if they are describing the same product. Respond with yes if they do and no if they don't")
 parser.add_argument("--model_name", type=str, default='all-MiniLM-L6-v2',help="model_path or name")
 parser.add_argument("--max_seq_length", type=int, default=256, help='models sequence length')
+parser.add_argument("--threshold", type=int, default=30, help='cluster threshold')
 
 hp, _ = parser.parse_known_args()
 
@@ -253,31 +256,24 @@ plt.show()
 
 
 
-smp_thresh = [49, 81, 114, 155, 220, 281, 405]
+# smp_thresh = [49, 81, 114, 155, 220, 281, 405] # default threshold vals
 
-for threshold in smp_thresh:
-    train = []
-    combined_ids = []
-    for cluster_idx, total_clus_mem in cluster_sts.items():
-    # min/max handle
-        cluster_members = data[cluster_idx]
-        if total_clus_mem < threshold:
-            num_samples = total_clus_mem
-        elif total_clus_mem > threshold:
-            num_samples = threshold
-            
-        sample_ids = random.sample(cluster_members, k=num_samples)
-        combined_ids.extend(sample_ids)
 
-    
+# for threshold in thresholds:
 
-    random.shuffle(combined_ids)
-    train = [tmp[idx] for idx in combined_ids]
-    size = len(train)
+combined_ids = []
+for cluster_idx, total_clus_mem in cluster_sts.items():
+    cluster_members = data[cluster_idx]
+    num_samples = min(total_clus_mem, hp.threshold)
+    sample_ids = random.sample(cluster_members, k=num_samples)
+    combined_ids.extend(sample_ids)
 
-    with open(f'train_tfidf_{round(size/1000, 1)}k.json','w') as f:
-        json.dump(train, f, indent=2)
+random.shuffle(combined_ids)
+train = [tmp[idx] for idx in combined_ids]
+size = len(train)
 
+with open(f'train_tfidf_{round(size/1000, 1)}k.json', 'w') as f:
+    json.dump(train, f, indent=2)
 
 
 
