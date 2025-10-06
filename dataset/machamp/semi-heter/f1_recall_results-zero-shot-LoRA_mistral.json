@@ -1,11 +1,11 @@
 {
-  "Acc": 0.9541062801932367,
-  "Precision": 0.9794520547945206,
-  "Recall": 0.89937106918239,
-  "f1": 0.9377049180327869,
-  "eval_time": 734.224982171,
-  "task_name": "semi-heter-narayan-test.json",
+  "Acc": 0.961352657004831,
+  "Precision": 0.9673202614379085,
+  "Recall": 0.9308176100628931,
+  "f1": 0.9487179487179488,
+  "eval_time": 833.161164412,
+  "task_name": "semi-heter-test.json",
   "model": "mistralai/Mistral-7B-v0.1",
   "method": "zero-shot",
-  "data_size": 16000
+  "data_size": 4000
 }

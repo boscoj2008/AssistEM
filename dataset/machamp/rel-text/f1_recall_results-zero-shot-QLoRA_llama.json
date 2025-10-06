@@ -1,0 +1,11 @@
+{
+  "Acc": 0.88,
+  "Precision": 0.7678571428571429,
+  "Recall": 0.4777777777777778,
+  "f1": 0.589041095890411,
+  "eval_time": 1667.703629676,
+  "task_name": "rel-text-test.json",
+  "model": "01-ai/Yi-34B",
+  "method": "zero-shot",
+  "data_size": 4000
+}

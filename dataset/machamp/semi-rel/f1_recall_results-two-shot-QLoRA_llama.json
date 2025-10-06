@@ -1,0 +1,11 @@
+{
+  "Acc": 0.9748283752860412,
+  "Precision": 0.9831460674157303,
+  "Recall": 0.9562841530054644,
+  "f1": 0.9695290858725761,
+  "eval_time": 1532.0104296359998,
+  "task_name": "semi-rel-test.json",
+  "model": "01-ai/Yi-34B",
+  "method": "two-shot",
+  "data_size": 12900
+}

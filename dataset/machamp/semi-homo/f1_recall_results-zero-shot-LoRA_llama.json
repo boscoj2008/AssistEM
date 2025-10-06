@@ -1,11 +1,11 @@
 {
-  "Acc": 0.976,
-  "Precision": 0.945054945054945,
-  "Recall": 0.9247311827956989,
-  "f1": 0.9347826086956522,
-  "eval_time": 8193.665636270001,
+  "Acc": 0.972,
+  "Precision": 0.9340659340659341,
+  "Recall": 0.9139784946236559,
+  "f1": 0.9239130434782609,
+  "eval_time": 1259.164682604,
   "task_name": "semi-homo-test.json",
-  "model": "upstage/SOLAR-10.7B-v1.0",
+  "model": "01-ai/Yi-9B",
   "method": "zero-shot",
-  "data_size": 8000
+  "data_size": 4000
 }

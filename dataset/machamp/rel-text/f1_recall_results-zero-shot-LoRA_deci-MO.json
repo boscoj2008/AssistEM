@@ -1,0 +1,10 @@
+{
+  "Acc": 0.968,
+  "Precision": 0.0,
+  "Recall": 0.0,
+  "f1": 0.0,
+  "eval_time": 3715.05489978,
+  "task_name": "rel-text-test.json",
+  "model": "Deci/DeciLM-7B",
+  "method": "zero-shot"
+}

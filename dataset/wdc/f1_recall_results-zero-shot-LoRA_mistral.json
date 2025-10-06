@@ -1,11 +1,11 @@
 {
-  "Acc": 0.8738532110091743,
-  "Precision": 0.4647887323943662,
-  "Recall": 0.66,
-  "f1": 0.5454545454545454,
-  "eval_time": 7655.5369328960005,
+  "Acc": 0.9380733944954128,
+  "Precision": 0.6666666666666666,
+  "Recall": 0.92,
+  "f1": 0.7731092436974789,
+  "eval_time": 864.178243508,
   "task_name": "wdc-test.json",
-  "model": "upstage/SOLAR-10.7B-v1.0",
+  "model": "mistralai/Mistral-7B-v0.1",
   "method": "zero-shot",
-  "data_size": 14000
+  "data_size": 4000
 }

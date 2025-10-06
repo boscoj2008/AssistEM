@@ -9,7 +9,7 @@ class InstructionDataset(Dataset):
                  self, 
                  data_list, 
                  tokenizer, 
-                 input_type,
+                 input_field,
                  max_length=512, 
                  is_train=True, 
                  incontext=False,
@@ -21,7 +21,7 @@ class InstructionDataset(Dataset):
         self.is_train = is_train
         self.incontext = incontext
         self.num = num
-        self.input_type = input_type
+        self.input_field = input_field
         self.data_list = self.transform(list(data_list))
 
     def pad_or_truncate(
@@ -48,7 +48,7 @@ class InstructionDataset(Dataset):
  
         
         # instructions 
-        instructions = [entity_matching_prompt(x, exmpls=self.incontext, num=self.num, input_type=self.input_type) for x in data_list]
+        instructions = [entity_matching_prompt(x, num=self.num, input_field=self.input_field) for x in data_list]
         tokenized_instructions = self.tokenizer(instructions, add_special_tokens=False)
 
         processed_data = []
@@ -106,7 +106,7 @@ def collate_func(data: list) -> dict:
 def generate_test_data(args, test_data, tokenizer, exemplars=None):
     '''choose the number of shots or default to zero-shot prompting'''
 
-    if not args.method == "zero-shot":
+    if not args.method == "zero-shot":  # we no longer support fewshot in this project, open PR if intrested
         MapToShot = {
                     "two-shot": 2, "three-shot": 3, "four-shot": 4,
                     "five-shot": 5, "six-shot": 6, "seven-shot": 7,
@@ -153,9 +153,9 @@ def generate_data(data_path: str = None,
         return train_ds, valid_ds
     else:
         # Loading few-shot and query datasets
-        fewshot = load_dataset(data_format, data_files=inshot_data_path, split='train')  # Few-shot data
+        #fewshot = load_dataset(data_format, data_files=inshot_data_path, split='train')  # Few-shot data
         query = load_dataset(data_format, data_files=data_path, split='train')          # Query data
-        return query, fewshot      
+        return query      
     
     
     

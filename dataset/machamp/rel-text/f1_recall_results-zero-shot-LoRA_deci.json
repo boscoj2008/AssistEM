@@ -1,0 +1,11 @@
+{
+  "Acc": 0.86,
+  "Precision": 0.7083333333333334,
+  "Recall": 0.37777777777777777,
+  "f1": 0.49275362318840576,
+  "eval_time": 981.685520917,
+  "task_name": "rel-text-test.json",
+  "model": "Deci/DeciLM-7B",
+  "method": "zero-shot",
+  "data_size": 16000
+}

@@ -1,11 +1,11 @@
 {
-  "Acc": 0.977116704805492,
-  "Precision": 0.9832402234636871,
-  "Recall": 0.9617486338797814,
-  "f1": 0.9723756906077347,
-  "eval_time": 3714.971003411,
+  "Acc": 0.9679633867276888,
+  "Precision": 0.9774011299435028,
+  "Recall": 0.9453551912568307,
+  "f1": 0.961111111111111,
+  "eval_time": 1113.010758573,
   "task_name": "semi-rel-test.json",
-  "model": "upstage/SOLAR-10.7B-v1.0",
+  "model": "01-ai/Yi-9B",
   "method": "zero-shot",
-  "data_size": 8000
+  "data_size": 4000
 }

@@ -52,7 +52,7 @@ def parse_arguments() -> Namespace:
 
     parser.add_argument("--max_val_seq_len", type=int,
                         default=4096,  help="max_val_seq_len")    
-    parser.add_argument("--eval_dataset_size", type=int,
+    parser.add_argument("--train_set_size", type=int,
                         default=6000,  help="eval_type")    
                        
                                                 
@@ -73,7 +73,7 @@ if __name__ == "__main__":
     print(''.join(f'{k}={v}\n' for k, v in vars(args).items()))
     # Prepare dataset
     tokenizer = AutoTokenizer.from_pretrained(args.base_model_path, use_fast=True, trust_remote_code=True)
-    test_data, exemplars = generate_data(data_path=args.test_data_path, train_val=False, inshot_data_path=args.incontext_data_path)
+    test_data = generate_data(data_path=args.test_data_path, train_val=False)
     
     # check for 'falcon' or 'mpt' in the tokenizer's name_or_path
     if 'falcon' in tokenizer.name_or_path:
@@ -91,7 +91,7 @@ if __name__ == "__main__":
         tokenizer.pad_token_id = 0       
     
     
-    test_dataset = generate_test_data(args, test_data=test_data, tokenizer = tokenizer, exemplars=exemplars)            
+    test_dataset = generate_test_data(args, test_data=test_data, tokenizer = tokenizer)            
     test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, collate_fn=collate_func)
     
     # Prepare model
@@ -172,7 +172,7 @@ if __name__ == "__main__":
     "task_name": task_name,
     "model": model.config._name_or_path,
     "method": args.method,
-    "data_size": args.eval_dataset_size
+    "data_size": args.train_set_size
     }
     update_json_result(args.result_filename, results) 
     

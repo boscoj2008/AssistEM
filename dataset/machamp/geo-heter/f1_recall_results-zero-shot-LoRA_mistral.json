@@ -1,11 +1,11 @@
 {
-  "Acc": 0.956,
-  "Precision": 0.896774193548387,
-  "Recall": 0.9586206896551724,
-  "f1": 0.9266666666666665,
-  "eval_time": 861.954205562,
+  "Acc": 0.942,
+  "Precision": 0.8625,
+  "Recall": 0.9517241379310345,
+  "f1": 0.9049180327868853,
+  "eval_time": 981.873372861,
   "task_name": "geo-heter-test.json",
   "model": "mistralai/Mistral-7B-v0.1",
   "method": "zero-shot",
-  "data_size": 14000
+  "data_size": 4000
 }

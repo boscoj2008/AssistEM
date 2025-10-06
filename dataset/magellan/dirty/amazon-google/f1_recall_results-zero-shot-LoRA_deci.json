@@ -1,0 +1,11 @@
+{
+  "Acc": 0.934,
+  "Precision": 0.65,
+  "Recall": 0.7647058823529411,
+  "f1": 0.7027027027027027,
+  "eval_time": 972.23667059,
+  "task_name": "amazon-google-test.json",
+  "model": "Deci/DeciLM-7B",
+  "method": "zero-shot",
+  "data_size": 4000
+}

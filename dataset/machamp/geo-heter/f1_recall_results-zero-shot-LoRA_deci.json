@@ -1,11 +1,11 @@
 {
-  "Acc": 0.966,
-  "Precision": 0.9383561643835616,
-  "Recall": 0.9448275862068966,
-  "f1": 0.9415807560137458,
-  "eval_time": 913.430221641,
+  "Acc": 0.952,
+  "Precision": 0.9481481481481482,
+  "Recall": 0.8827586206896552,
+  "f1": 0.9142857142857144,
+  "eval_time": 978.4327502800002,
   "task_name": "geo-heter-test.json",
   "model": "Deci/DeciLM-7B",
   "method": "zero-shot",
-  "data_size": 15800
+  "data_size": 16000
 }

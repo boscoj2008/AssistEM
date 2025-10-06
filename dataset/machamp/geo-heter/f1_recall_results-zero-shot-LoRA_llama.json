@@ -1,11 +1,11 @@
 {
-  "Acc": 0.958,
-  "Precision": 0.9133333333333333,
-  "Recall": 0.9448275862068966,
-  "f1": 0.9288135593220338,
-  "eval_time": 1878.573035872,
+  "Acc": 0.934,
+  "Precision": 0.8333333333333334,
+  "Recall": 0.9655172413793104,
+  "f1": 0.8945686900958466,
+  "eval_time": 1272.1486619480002,
   "task_name": "geo-heter-test.json",
-  "model": "upstage/SOLAR-10.7B-v1.0",
+  "model": "01-ai/Yi-9B",
   "method": "zero-shot",
-  "data_size": 10000
+  "data_size": 4000
 }

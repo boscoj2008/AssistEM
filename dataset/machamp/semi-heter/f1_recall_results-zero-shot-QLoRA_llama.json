@@ -1,11 +1,11 @@
 {
-  "Acc": 0.9758454106280193,
-  "Precision": 0.9685534591194969,
+  "Acc": 0.9734299516908212,
+  "Precision": 0.9625,
   "Recall": 0.9685534591194969,
-  "f1": 0.9685534591194969,
-  "eval_time": 1373.624052888,
+  "f1": 0.9655172413793103,
+  "eval_time": 1380.1369557199998,
   "task_name": "semi-heter-test.json",
   "model": "01-ai/Yi-34B",
   "method": "zero-shot",
-  "data_size": 15800
+  "data_size": 4000
 }

@@ -1,0 +1,10 @@
+{
+  "Acc": 0.8333333333333334,
+  "Precision": 0.2765957446808511,
+  "Recall": 0.4482758620689655,
+  "f1": 0.3421052631578947,
+  "eval_time": 580.2165452099999,
+  "task_name": "semi-text-w-test.json",
+  "model": "yahma/llama-7b-hf",
+  "method": "zero-shot"
+}

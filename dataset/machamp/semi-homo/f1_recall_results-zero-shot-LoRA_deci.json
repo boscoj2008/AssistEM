@@ -1,11 +1,11 @@
 {
-  "Acc": 0.982,
-  "Precision": 0.9772727272727273,
-  "Recall": 0.9247311827956989,
-  "f1": 0.9502762430939227,
-  "eval_time": 2236.181352965,
+  "Acc": 0.976,
+  "Precision": 0.9175257731958762,
+  "Recall": 0.956989247311828,
+  "f1": 0.9368421052631579,
+  "eval_time": 1721.1546673540001,
   "task_name": "semi-homo-test.json",
   "model": "Deci/DeciLM-7B",
   "method": "zero-shot",
-  "data_size": 15800
+  "data_size": 16000
 }

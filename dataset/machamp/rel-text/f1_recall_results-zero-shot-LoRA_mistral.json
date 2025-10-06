@@ -1,0 +1,11 @@
+{
+  "Acc": 0.858,
+  "Precision": 0.6376811594202898,
+  "Recall": 0.4888888888888889,
+  "f1": 0.5534591194968553,
+  "eval_time": 999.9173565090001,
+  "task_name": "rel-text-test.json",
+  "model": "mistralai/Mistral-7B-v0.1",
+  "method": "zero-shot",
+  "data_size": 4000
+}

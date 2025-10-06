@@ -20,7 +20,7 @@ prepare_model_for_kbit_training,
 get_peft_model,
 TaskType
 )
-from utils import get_bnb_config, NEFTune
+from utils import get_bnb_config
 from src.dataset import(
 InstructionDataset, 
 collate_func,
@@ -82,7 +82,7 @@ def parse_arguments() -> Namespace:
                         help="speedup with flash attention")
     parser.add_argument("--use_gradient_checkpointing", action="store_true",
                         help="use grad checkpointing to avoid OOM error")                        
-    parser.add_argument("--input_type", type=str, default="BrandTitle",
+    parser.add_argument("--input_field", type=str, default="BrandTitle",
                         help="BrandTitle, Title or BrandTitlePrice")                        
     parser.add_argument("--max_val_seq_len", type=int,
                         default=4096,  help="max_val_seq_len")                                                 
@@ -116,8 +116,8 @@ if __name__ == "__main__":
     else:
         tokenizer.pad_token_id = 0   
     
-    train_dataset = InstructionDataset(train_data, tokenizer, max_length=184, input_type=args.input_type)
-    valid_dataset = InstructionDataset(valid_data, tokenizer, max_length=args.max_val_seq_len, input_type=args.input_type)
+    train_dataset = InstructionDataset(train_data, tokenizer, max_length=184, input_field=args.input_field)
+    valid_dataset = InstructionDataset(valid_data, tokenizer, max_length=args.max_val_seq_len, input_field=args.input_field)
 
     train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, collate_fn=collate_func)
     valid_loader = DataLoader(valid_dataset, batch_size=1, shuffle=False, collate_fn=collate_func)
@@ -135,7 +135,8 @@ if __name__ == "__main__":
            torch_dtype=torch.bfloat16,
            #use_flash_attention_2 = args.flash_attention, # supports llama, falcon and whisper
            quantization_config=bnb_config,
-           trust_remote_code=True
+           trust_remote_code=True,
+           token ="your hf token"
             )
     
     else:
@@ -147,7 +148,8 @@ if __name__ == "__main__":
             #use_flash_attention_2 = args.flash_attention, # supports llama, falcon and whisper
             load_in_8bit =True,
             device_map = 'auto',
-            trust_remote_code=True
+            trust_remote_code=True,
+            token ="your hf token"
             )
     assert args.peft_type in ['LoRA', 'QLoRA'], "Please choose either 'IA3' or 'LoRA'/'QLoRA' for args.peft_type"
     if args.peft_type == "QLoRA" or args.peft_type == "LoRA":
